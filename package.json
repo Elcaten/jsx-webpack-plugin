@@ -1,40 +1,35 @@
 {
-  "name": "handlebars-webpack-plugin",
-  "version": "2.2.1",
-  "description": "Renders your html-template on build time",
+  "name": "jsx-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Renders your jsx-template on build time",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "ava"
+    "lint": "eslint ."
   },
   "pre-push": [
-    "lint",
-    "test"
+    "lint"
   ],
   "repository": {
     "type": "git",
-    "url": "https://sagold@github.com/sagold/handlebars-webpack-plugin.git"
+    "url": "https://github.com/Elcaten/jsx-webpack-plugin.git"
   },
   "keywords": [
     "webpack",
     "plugin",
-    "handlebars",
+    "jsx",
     "server"
   ],
-  "author": "Sascha Goldhofer <noreply@saschagoldhofer.de> (https://github.com/sagold/)",
+  "author": "Andrei Lineischikov (https://github.com/elcaten/)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sagold/handlebars-webpack-plugin/issues"
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "homepage": "https://github.com/sagold/handlebars-webpack-plugin",
+  "homepage": "https://github.com/Elcaten/jsx-webpack-plugin",
   "dependencies": {
     "chalk": "^1.1.1",
+    "decache": "^4.6.1",
     "fs-extra": "^0.26.7",
     "glob": "^5.0.15",
-    "handlebars": "^4.0.3",
     "safe-require": "^1.0.4"
   },
   "devDependencies": {
@@ -50,6 +45,9 @@
     "verbose": true
   },
   "peerDependencies": {
-    "html-webpack-plugin": "^4.4.1"
+    "@babel/preset-react": "^7.17.12",
+    "@babel/register": "^7.17.7",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   }
 }
